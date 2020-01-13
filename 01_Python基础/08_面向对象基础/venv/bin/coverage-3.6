@@ -1,0 +1,10 @@
+#!/home/xujinshan/code/02_面向对象/01_面向对象基础/venv/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from coverage.cmdline import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
